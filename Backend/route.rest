@@ -1,0 +1,21 @@
+GET http://localhost:3100/users
+
+GET http://localhost:3100/users/15
+
+POST http://localhost:3100/users/
+Content-Type: application/json
+
+{
+    "email": "evilker96@gmail.com",
+    "password": "1234"
+}
+
+
+DELETE http://localhost:3100/users/15
+
+PATCH  http://localhost:3100/users/15
+Content-Type: application/json
+
+{
+    "email": "New Email"
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Eden</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand-title">Eden Vilker</div>
+            <!-- Hamburger Menu -->
+            <a href="#" class="toggle-button">
+                <ion-icon class="bar" name="menu-outline"></ion-icon>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#nav-1">About Me</a></li>
+                    <li><a href="#nav-2">Education</a></li>
+                    <li><a href="#nav-2">Employment</a></li>
+                    <li><a href="#nav-3">Hobbies</a></li>
+                    <li><a href="#nav-4">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Welcome to <br> my protofolio</h1>
+        <ul class="me-in-one-sentence">
+            <li>Computer Sience Student</li>
+            <li>Web developer</li>
+            <li>Surfer</li>
+        </ul>
+    </header>
+    <section id="nav-1" class="section-container">
+        <div>
+            <h2>About Me</h2>
+            <p>Hi! I'm Eden and I'm 25 years old, I live in Tel Aviv and I study in Reichman Univeristy in Herzeliya. This is my first website and even though it very simple and doesn't look very proffesional I'm very proud of it as I've built everything from scratch! using HTML, CSS and JS</p>
+        </div>
+        <div class="eden-image"></div>
+    </section>
+    <section id="nav-2" class="section-container">
+        <div>
+            <ul class="education">
+                <li><h2>Educatoin</h2></li>
+                <li class="university-list"><b>Reichman University(2020-present):</b></li>
+                <li>
+                    <ul>
+                        <li>BSc in Computer Scince</li>
+                        <li>Debate team (2021-present)</li>
+                        <li>Running competetive team (2020-present)</li>
+                        <li>Students Union: Head of Professional Clubs  (2021-present)</li>
+                    </ul>     
+                </li>
+                <li class="high-school-list"><b>Rothberg High School (2011-2014):</b></li>
+                <li>
+                    <ul>
+                        <li>Gradueted with great honor</li>
+                        <li>5 units Math, 5 units English Speakers</li>
+                        <li>Gradueted with great honor</li>
+                    </ul>
+                </li>
+                <li class="bar-ilan">Bar Ilan program for Math Exellency(2006-2010)</li>
+                <li>Participated in the presitge program for math enrichment</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Work Experience</h2>
+ 
+            <ul class="waze-list">
+                <li><h3><b>Program Manager at Waze/Google</b></h3></li>
+                <li><b>Vendor manager</b> - managing more than 400 vendors from 5 loacations worldwide</li>
+                <li><b>Data lead</b> - extracting and anaylizing costumers data</li>
+                <li><b>Technical Solutions Specialist</b> - implemnting clousers on the Waze map editor</li>
+            </ul>
+            <ul class="iai-list">
+                <li><h3><b>Quality Assurance at IAI</b></h3></li>
+                <li><b>QA</b> - conducting manual and automated tests on UAV operation systems</li>
+                <li><b>Secutiry Classification</b> - Top Secrete</li>
+              </ul>
+        </div>
+    </section>
+    <section id="nav-3" class="hobbies-section">
+        <h2>Hobbies</h2>
+        <p>Here are my top hobbies in pictures :)</p>
+        <div class="wrapper">
+            <div class="img-area">
+                <div class="single-img"><img class="img-traveling" src="./images/traveling.jpg" alt="A photo taken in Peru at the Waywush treck"></div>
+                <div class="single-img"><img class="img-run" src="./images/running.JPG" alt="A photo taken in Peru at the Waywush treck"></div>
+                <div class="single-img"><img class="img-run" src="./images/running.JPG" alt="A photo taken in Peru at the Waywush treck"></div>
+                <div class="single-img"><img class="img-run" src="./images/running.JPG" alt="A photo taken in Peru at the Waywush treck"></div>
+                <div class="single-img"><img class="img-run" src="./images/running.JPG" alt="A photo taken in Peru at the Waywush treck"></div>
+                <div class="single-img"><img class="img-surf" src="images/surf.JPG" alt="A photo taken in Panama from the beach to the ocean"></div>
+                <div class="single-img"><img class="img-surf" src="images/surf.JPG" alt="A photo taken in Panama from the beach to the ocean"></div>
+                <div class="single-img"><img class="img-surf" src="images/surf.JPG" alt="A photo taken in Panama from the beach to the ocean"></div>
+                <div class="single-img"><img class="img-surf" src="images/surf.JPG" alt="A photo taken in Panama from the beach to the ocean"></div>
+                <div class="single-img"><img class="img-surf" src="images/surf.JPG" alt="A photo taken in Panama from the beach to the ocean"></div>
+            </div>
+        </div>
+    </section>
+    <section id="nav-4" class="form-section">
+        <div id="form-container">
+            <h2>Contact Me</h2>
+            <!-- this form will store all of the  form submission -->
+            <form id="contact-me" action="index.html" onsubmit="return validateForm()" method="post">  
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                <input id="submit" type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <!-- SOCIAL MEDIA -->
+        <!-- Add icon library -->
+        <h3>Around the Web</h3>
+        <div>
+            <a href="https://www.facebook.com/evilker" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/eden-vilker-563532194/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/edenvilker/" class="fa fa-instagram"></a>
+        </div>
+        <!-- <p class="marquee">
+            <span id="date-today"></span>
+        </p> -->
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
